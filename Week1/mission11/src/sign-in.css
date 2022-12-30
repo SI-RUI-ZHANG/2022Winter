@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+@font-face {
+    font-family: Google Sans;
+    font-weight: 400;
+    src: url('assets/GoogleSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Google Sans;
+    font-weight: 500;
+    src: url('assets/GoogleSans-Medium.ttf');
+}
+
+:root {
+    --blue: #1a73e8;
+    --grey: #5f6368;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: 'Roboto', 'Noto Sans', sans-serif;
+}
+
+.sign-in-card {
+    display: block;
+    margin: auto;
+    width: 448px;
+    height: 500px;
+    padding: 48px 40px 36px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 8px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    font-family: 'Google Sans', 'Noto Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+}
+
+.heading-subtext {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.input-group {
+    margin: 1px 1px 0;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.account-input {
+    width: 100%;
+    height: 52px;
+    padding: 13px 15px;
+    font-size: 16px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 3px;
+}
+
+input::placeholder {
+    color: rgba(32, 33, 36, 0.65);
+}
+
+.out-link, .out-link-light {
+    color: var(--blue);
+}
+
+.out-link {
+    font-weight: 500;
+}
+
+.out-link-light {
+    font-size: .875rem;
+    font-weight: 400;
+    letter-spacing: .0107142857em;
+}
+
+.out-link-container {
+    padding: 9px 0 3px;
+}
+
+.guest-mode-container {
+    padding: 10px 0 30px 0
+}
+
+.guest-mode-content {
+    color: var(--grey);
+}
+
+.next-step {
+    font-family: "Google Sans", "Noto Sans", sans-serif;
+    font-weight: 400;
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 79px;
+    height: 36px;
+    display: block;
+    font-size: .875rem;
+    color: #fff;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 3px;
+}
+
+.footer {
+    padding: 24px 0 0;
+    font-family: 'roboto', 'Noto Sans Myanmar', sans-serif;
+    font-size: 12px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.language-selection {
+    width: 60%;
+}
+
+.footer-links {
+    font-size: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.4rem;
+}
+
+.footer-links a {
+    color: var(--grey);
+}
+
+.down-triangle {
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-left: 7px;
+    border-color: currentColor transparent transparent transparent;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    height: 0;
+    width: 0;
+}
